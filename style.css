@@ -1,0 +1,136 @@
+body {
+    height: 100%;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3E5AB; /* Background warna krem */
+    color: #4A4A4A;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #181C14;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 4px solid #3C3D37;
+}
+
+.header-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #f5e9d7;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: 'Playfair Display', serif;
+    color: white;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+.motto, .education, .projects, .achievements, .contact {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff9e6; /* Warna latar bagian konten */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1bfa7;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #c9aa79;
+    padding-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    color: #333;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #d1bfa7;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.contact a {
+    color: #4A4A4A;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+    color: #7B6E56;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .header-container h1 {
+        font-size: 28px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
